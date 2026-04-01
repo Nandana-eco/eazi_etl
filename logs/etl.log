@@ -1,0 +1,45 @@
+2026-03-31 10:42:15,999 | INFO | Starting ETL...
+2026-03-31 10:42:20,649 | ERROR | ETL FAILED
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 109, in <module>
+    insert_pg(converted, pg_table)
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 86, in insert_pg
+    execute_values(pg_cursor, query, values)
+  File "C:\Users\User\Desktop\eazi_etl\venv\Lib\site-packages\psycopg2\extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.DatatypeMismatch: column "ced_ooc" is of type boolean but expression is of type integer
+LINE 3: ...alse,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+2026-03-31 10:44:09,680 | INFO | Starting ETL...
+2026-03-31 10:44:16,194 | INFO | client_meters: 20000 rows processed
+2026-03-31 10:44:22,715 | INFO | client_meters: 40000 rows processed
+2026-03-31 10:44:28,810 | INFO | client_meters: 60000 rows processed
+2026-03-31 10:44:35,217 | INFO | client_meters: 80000 rows processed
+2026-03-31 10:44:41,504 | INFO | client_meters: 100000 rows processed
+2026-03-31 10:44:47,781 | INFO | client_meters: 120000 rows processed
+2026-03-31 10:44:53,813 | INFO | client_meters: 140000 rows processed
+2026-03-31 10:44:59,319 | INFO | client_meters: 160000 rows processed
+2026-03-31 10:45:05,024 | INFO | client_meters: 180000 rows processed
+2026-03-31 10:45:11,707 | INFO | client_meters: 200000 rows processed
+2026-03-31 10:45:19,059 | INFO | client_meters: 220000 rows processed
+2026-03-31 10:45:26,266 | INFO | client_meters: 240000 rows processed
+2026-03-31 10:45:33,322 | INFO | client_meters: 260000 rows processed
+2026-03-31 10:45:39,126 | INFO | client_meters: 280000 rows processed
+2026-03-31 10:45:45,106 | INFO | client_meters: 300000 rows processed
+2026-03-31 10:45:52,292 | INFO | client_meters: 320000 rows processed
+2026-03-31 10:46:00,075 | INFO | client_meters: 340000 rows processed
+2026-03-31 10:46:07,439 | INFO | client_meters: 360000 rows processed
+2026-03-31 10:46:14,316 | INFO | client_meters: 380000 rows processed
+2026-03-31 10:46:21,076 | INFO | client_meters: 400000 rows processed
+2026-03-31 10:46:28,485 | INFO | client_meters: 420000 rows processed
+2026-03-31 10:46:35,665 | INFO | client_meters: 440000 rows processed
+2026-03-31 10:46:42,300 | INFO | client_meters: 460000 rows processed
+2026-03-31 10:46:49,301 | INFO | client_meters: 480000 rows processed
+2026-03-31 10:46:56,195 | INFO | client_meters: 500000 rows processed
+2026-03-31 10:47:03,294 | INFO | client_meters: 520000 rows processed
+2026-03-31 10:47:09,995 | INFO | client_meters: 540000 rows processed
+2026-03-31 10:47:16,164 | INFO | client_meters: 557711 rows processed
+2026-03-31 10:47:17,621 | INFO | Finished client_meters
+2026-03-31 10:47:17,622 | INFO | ETL COMPLETED SUCCESSFULLY
