@@ -80,3 +80,70 @@ psycopg2.errors.SyntaxError: trailing junk after numeric literal at or near "118
 LINE 2: ...ss_line4, num_sites, lead_proof, search_postcode, 118_id, co...
                                                              ^
 
+2026-04-01 16:25:15,078 | INFO | Starting ETL...
+2026-04-01 16:25:24,737 | INFO | clients: 25000 rows processed
+2026-04-01 16:25:33,943 | INFO | clients: 50000 rows processed
+2026-04-01 16:25:41,805 | INFO | clients: 75000 rows processed
+2026-04-01 16:25:49,986 | INFO | clients: 100000 rows processed
+2026-04-01 16:25:59,205 | INFO | clients: 125000 rows processed
+2026-04-01 16:26:09,198 | INFO | clients: 150000 rows processed
+2026-04-01 16:26:18,260 | INFO | clients: 175000 rows processed
+2026-04-01 16:26:27,685 | INFO | clients: 200000 rows processed
+2026-04-01 16:26:38,462 | INFO | clients: 225000 rows processed
+2026-04-01 16:26:57,354 | INFO | clients: 250000 rows processed
+2026-04-01 16:27:21,868 | INFO | clients: 275000 rows processed
+2026-04-01 16:27:31,562 | INFO | clients: 300000 rows processed
+2026-04-01 16:27:40,879 | INFO | clients: 325000 rows processed
+2026-04-01 16:27:50,631 | INFO | clients: 350000 rows processed
+2026-04-01 16:28:00,447 | INFO | clients: 375000 rows processed
+2026-04-01 16:28:11,430 | INFO | clients: 400000 rows processed
+2026-04-01 16:28:20,991 | INFO | clients: 425000 rows processed
+2026-04-01 16:28:31,029 | INFO | clients: 450000 rows processed
+2026-04-01 16:28:41,303 | INFO | clients: 475000 rows processed
+2026-04-01 16:28:51,753 | INFO | clients: 500000 rows processed
+2026-04-01 16:29:01,539 | INFO | clients: 525000 rows processed
+2026-04-01 16:29:11,801 | INFO | clients: 550000 rows processed
+2026-04-01 16:29:22,261 | INFO | clients: 575000 rows processed
+2026-04-01 16:29:32,701 | INFO | clients: 600000 rows processed
+2026-04-01 16:29:42,998 | INFO | clients: 625000 rows processed
+2026-04-01 16:29:53,734 | INFO | clients: 650000 rows processed
+2026-04-01 16:30:04,665 | INFO | clients: 675000 rows processed
+2026-04-01 16:30:15,244 | INFO | clients: 700000 rows processed
+2026-04-01 16:30:25,894 | INFO | clients: 725000 rows processed
+2026-04-01 16:30:36,560 | INFO | clients: 750000 rows processed
+2026-04-01 16:30:42,243 | INFO | clients: 759381 rows processed
+2026-04-01 16:30:44,649 | INFO | Finished clients
+2026-04-01 16:30:44,649 | INFO | ETL COMPLETED SUCCESSFULLY
+2026-04-01 16:42:03,442 | INFO | Starting ETL...
+2026-04-01 16:42:06,223 | INFO | client_status: 25000 rows processed
+2026-04-01 16:42:08,569 | INFO | client_status: 50000 rows processed
+2026-04-01 16:42:11,091 | INFO | client_status: 75000 rows processed
+2026-04-01 16:42:13,834 | INFO | client_status: 100000 rows processed
+2026-04-01 16:42:16,413 | INFO | client_status: 125000 rows processed
+2026-04-01 16:42:19,036 | INFO | client_status: 150000 rows processed
+2026-04-01 16:42:22,143 | INFO | client_status: 175000 rows processed
+2026-04-01 16:42:25,278 | INFO | client_status: 200000 rows processed
+2026-04-01 16:42:28,291 | INFO | client_status: 225000 rows processed
+2026-04-01 16:42:31,316 | INFO | client_status: 250000 rows processed
+2026-04-01 16:42:34,518 | INFO | client_status: 275000 rows processed
+2026-04-01 16:42:37,949 | INFO | client_status: 300000 rows processed
+2026-04-01 16:42:41,250 | INFO | client_status: 325000 rows processed
+2026-04-01 16:42:44,315 | INFO | client_status: 350000 rows processed
+2026-04-01 16:42:47,378 | INFO | client_status: 375000 rows processed
+2026-04-01 16:42:50,523 | INFO | client_status: 400000 rows processed
+2026-04-01 16:42:53,655 | INFO | client_status: 425000 rows processed
+2026-04-01 16:42:56,788 | INFO | client_status: 450000 rows processed
+2026-04-01 16:42:59,984 | INFO | client_status: 475000 rows processed
+2026-04-01 16:43:03,218 | INFO | client_status: 500000 rows processed
+2026-04-01 16:43:06,461 | INFO | client_status: 525000 rows processed
+2026-04-01 16:43:09,583 | INFO | client_status: 550000 rows processed
+2026-04-01 16:43:12,876 | INFO | client_status: 575000 rows processed
+2026-04-01 16:43:16,200 | INFO | client_status: 600000 rows processed
+2026-04-01 16:43:19,571 | INFO | client_status: 625000 rows processed
+2026-04-01 16:43:22,961 | INFO | client_status: 650000 rows processed
+2026-04-01 16:43:26,366 | INFO | client_status: 675000 rows processed
+2026-04-01 16:43:29,808 | INFO | client_status: 700000 rows processed
+2026-04-01 16:43:33,267 | INFO | client_status: 725000 rows processed
+2026-04-01 16:43:35,359 | INFO | client_status: 731406 rows processed
+2026-04-01 16:43:36,304 | INFO | Finished client_status
+2026-04-01 16:43:36,305 | INFO | ETL COMPLETED SUCCESSFULLY

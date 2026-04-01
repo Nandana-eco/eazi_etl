@@ -7,6 +7,7 @@ import datetime
 from logger_config import setup_logger
 import os
 from dotenv import load_dotenv
+import re
 
 load_dotenv()
 logger = setup_logger()
@@ -75,15 +76,23 @@ def convert_rows(rows, table_name):
 
     return converted
 
+def quote_pg_identifier(col_name):
+    """Quote if column name starts with a number or has special characters."""
+    if not re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', col_name):
+        return f'"{col_name}"'
+    return col_name
+
 def insert_pg(rows, pg_table):
     if not rows:
         return
 
-    cols = rows[0].keys()
+    cols = list(rows[0].keys())
+    cols_quoted = [quote_pg_identifier(c) for c in cols]
+
     values = [[r[col] for col in cols] for r in rows]
 
     query = f"""
-        INSERT INTO {pg_table} ({', '.join(cols)})
+        INSERT INTO {pg_table} ({', '.join(cols_quoted)})
         VALUES %s
     """
 

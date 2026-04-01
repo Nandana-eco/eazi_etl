@@ -1,8 +1,8 @@
 TABLES = [
     
     {
-        "mysql_table": "clients",
-        "pg_table": "raw.clients"
+        "mysql_table": "client_status",
+        "pg_table": "raw.client_status"
     }
    
 ]

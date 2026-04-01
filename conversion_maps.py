@@ -318,7 +318,7 @@ CONVERSION_MAPS = {
     "num_sites": int,
     "lead_proof": str,
     "search_postcode": str,
-    '"118_id"': int,
+    "118_id": int,
     "cot_status": str,
     "encryptedID": str,
     "opening_time": str,
