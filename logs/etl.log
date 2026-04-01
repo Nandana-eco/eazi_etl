@@ -1,45 +1,82 @@
-2026-03-31 10:42:15,999 | INFO | Starting ETL...
-2026-03-31 10:42:20,649 | ERROR | ETL FAILED
+2026-04-01 15:01:21,878 | INFO | Starting ETL...
+2026-04-01 15:01:29,824 | INFO | client_meters: 25000 rows processed
+2026-04-01 15:01:37,610 | INFO | client_meters: 50000 rows processed
+2026-04-01 15:01:45,160 | INFO | client_meters: 75000 rows processed
+2026-04-01 15:01:52,638 | INFO | client_meters: 100000 rows processed
+2026-04-01 15:01:59,921 | INFO | client_meters: 125000 rows processed
+2026-04-01 15:02:07,038 | INFO | client_meters: 150000 rows processed
+2026-04-01 15:02:13,700 | INFO | client_meters: 175000 rows processed
+2026-04-01 15:02:21,703 | INFO | client_meters: 200000 rows processed
+2026-04-01 15:02:30,784 | INFO | client_meters: 225000 rows processed
+2026-04-01 15:02:39,377 | INFO | client_meters: 250000 rows processed
+2026-04-01 15:02:46,735 | INFO | client_meters: 275000 rows processed
+2026-04-01 15:03:02,496 | INFO | client_meters: 300000 rows processed
+2026-04-01 15:03:13,442 | INFO | client_meters: 325000 rows processed
+2026-04-01 15:03:22,937 | INFO | client_meters: 350000 rows processed
+2026-04-01 15:03:31,324 | INFO | client_meters: 375000 rows processed
+2026-04-01 15:03:39,618 | INFO | client_meters: 400000 rows processed
+2026-04-01 15:03:48,357 | INFO | client_meters: 425000 rows processed
+2026-04-01 15:03:57,182 | INFO | client_meters: 450000 rows processed
+2026-04-01 15:04:05,590 | INFO | client_meters: 475000 rows processed
+2026-04-01 15:04:14,374 | INFO | client_meters: 500000 rows processed
+2026-04-01 15:04:22,820 | INFO | client_meters: 525000 rows processed
+2026-04-01 15:04:31,022 | INFO | client_meters: 550000 rows processed
+2026-04-01 15:04:34,982 | INFO | client_meters: 557916 rows processed
+2026-04-01 15:04:36,457 | INFO | Finished client_meters
+2026-04-01 15:04:36,458 | INFO | ETL COMPLETED SUCCESSFULLY
+2026-04-01 15:11:58,938 | INFO | Starting ETL...
+2026-04-01 15:12:05,672 | ERROR | ETL FAILED
 Traceback (most recent call last):
-  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 109, in <module>
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 113, in <module>
     insert_pg(converted, pg_table)
-  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 86, in insert_pg
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 90, in insert_pg
     execute_values(pg_cursor, query, values)
   File "C:\Users\User\Desktop\eazi_etl\venv\Lib\site-packages\psycopg2\extras.py", line 1299, in execute_values
     cur.execute(b''.join(parts))
-psycopg2.errors.DatatypeMismatch: column "ced_ooc" is of type boolean but expression is of type integer
-LINE 3: ...alse,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,NUL...
+psycopg2.errors.SyntaxError: trailing junk after numeric literal at or near "118_id"
+LINE 2: ...ss_line4, num_sites, lead_proof, search_postcode, 118_id, co...
                                                              ^
-HINT:  You will need to rewrite or cast the expression.
 
-2026-03-31 10:44:09,680 | INFO | Starting ETL...
-2026-03-31 10:44:16,194 | INFO | client_meters: 20000 rows processed
-2026-03-31 10:44:22,715 | INFO | client_meters: 40000 rows processed
-2026-03-31 10:44:28,810 | INFO | client_meters: 60000 rows processed
-2026-03-31 10:44:35,217 | INFO | client_meters: 80000 rows processed
-2026-03-31 10:44:41,504 | INFO | client_meters: 100000 rows processed
-2026-03-31 10:44:47,781 | INFO | client_meters: 120000 rows processed
-2026-03-31 10:44:53,813 | INFO | client_meters: 140000 rows processed
-2026-03-31 10:44:59,319 | INFO | client_meters: 160000 rows processed
-2026-03-31 10:45:05,024 | INFO | client_meters: 180000 rows processed
-2026-03-31 10:45:11,707 | INFO | client_meters: 200000 rows processed
-2026-03-31 10:45:19,059 | INFO | client_meters: 220000 rows processed
-2026-03-31 10:45:26,266 | INFO | client_meters: 240000 rows processed
-2026-03-31 10:45:33,322 | INFO | client_meters: 260000 rows processed
-2026-03-31 10:45:39,126 | INFO | client_meters: 280000 rows processed
-2026-03-31 10:45:45,106 | INFO | client_meters: 300000 rows processed
-2026-03-31 10:45:52,292 | INFO | client_meters: 320000 rows processed
-2026-03-31 10:46:00,075 | INFO | client_meters: 340000 rows processed
-2026-03-31 10:46:07,439 | INFO | client_meters: 360000 rows processed
-2026-03-31 10:46:14,316 | INFO | client_meters: 380000 rows processed
-2026-03-31 10:46:21,076 | INFO | client_meters: 400000 rows processed
-2026-03-31 10:46:28,485 | INFO | client_meters: 420000 rows processed
-2026-03-31 10:46:35,665 | INFO | client_meters: 440000 rows processed
-2026-03-31 10:46:42,300 | INFO | client_meters: 460000 rows processed
-2026-03-31 10:46:49,301 | INFO | client_meters: 480000 rows processed
-2026-03-31 10:46:56,195 | INFO | client_meters: 500000 rows processed
-2026-03-31 10:47:03,294 | INFO | client_meters: 520000 rows processed
-2026-03-31 10:47:09,995 | INFO | client_meters: 540000 rows processed
-2026-03-31 10:47:16,164 | INFO | client_meters: 557711 rows processed
-2026-03-31 10:47:17,621 | INFO | Finished client_meters
-2026-03-31 10:47:17,622 | INFO | ETL COMPLETED SUCCESSFULLY
+2026-04-01 15:13:03,056 | INFO | Starting ETL...
+2026-04-01 15:13:03,477 | INFO | company: 263 rows processed
+2026-04-01 15:13:03,597 | INFO | Finished company
+2026-04-01 15:13:03,598 | INFO | ETL COMPLETED SUCCESSFULLY
+2026-04-01 16:01:03,602 | INFO | Starting ETL...
+2026-04-01 16:01:10,429 | ERROR | ETL FAILED
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 113, in <module>
+    insert_pg(converted, pg_table)
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 90, in insert_pg
+    execute_values(pg_cursor, query, values)
+  File "C:\Users\User\Desktop\eazi_etl\venv\Lib\site-packages\psycopg2\extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.SyntaxError: trailing junk after numeric literal at or near "118_id"
+LINE 2: ...ss_line4, num_sites, lead_proof, search_postcode, 118_id, co...
+                                                             ^
+
+2026-04-01 16:16:21,840 | INFO | Starting ETL...
+2026-04-01 16:16:28,234 | ERROR | ETL FAILED
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 113, in <module>
+    insert_pg(converted, pg_table)
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 90, in insert_pg
+    execute_values(pg_cursor, query, values)
+  File "C:\Users\User\Desktop\eazi_etl\venv\Lib\site-packages\psycopg2\extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.SyntaxError: trailing junk after numeric literal at or near "118_id"
+LINE 2: ...ss_line4, num_sites, lead_proof, search_postcode, 118_id, co...
+                                                             ^
+
+2026-04-01 16:16:42,112 | INFO | Starting ETL...
+2026-04-01 16:16:48,769 | ERROR | ETL FAILED
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 113, in <module>
+    insert_pg(converted, pg_table)
+  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 90, in insert_pg
+    execute_values(pg_cursor, query, values)
+  File "C:\Users\User\Desktop\eazi_etl\venv\Lib\site-packages\psycopg2\extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.SyntaxError: trailing junk after numeric literal at or near "118_id"
+LINE 2: ...ss_line4, num_sites, lead_proof, search_postcode, 118_id, co...
+                                                             ^
+

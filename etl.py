@@ -5,25 +5,29 @@ from conversion_maps import CONVERSION_MAPS
 from config import TABLES
 import datetime
 from logger_config import setup_logger
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 logger = setup_logger()
 
 # -----------------------------
 # Connections
 # -----------------------------
 mysql_conn = mysql.connector.connect(
-    host="ecosavepay-db.mysql.database.azure.com",
-    user="nandana",
-    password="TROpE45!!Polo",
-    database="ecosave_esp"
+    host=os.getenv("MYSQL_HOST"),
+    user=os.getenv("MYSQL_USER"),
+    password=os.getenv("MYSQL_PASSWORD"),
+    database=os.getenv("MYSQL_DB")
 )
 mysql_cursor = mysql_conn.cursor(dictionary=True)
 
 pg_conn = psycopg2.connect(
-    host="localhost",
-    user="postgres",
-    password="admin",
-    dbname="ecosave_local"
+    host=os.getenv("PG_HOST"),
+    user=os.getenv("PG_USER"),
+    password=os.getenv("PG_PASSWORD"),
+    dbname=os.getenv("PG_DB")
+
 )
 pg_cursor = pg_conn.cursor()
 
@@ -35,7 +39,7 @@ def truncate_table(pg_table):
     pg_cursor.execute(f"TRUNCATE TABLE {pg_table} CASCADE")
     pg_conn.commit()
 
-def fetch_mysql_rows(table_name, batch_size=20000):
+def fetch_mysql_rows(table_name, batch_size=25000):
     query = f"SELECT * FROM {table_name} ORDER BY 1 LIMIT %s OFFSET %s"
     offset = 0
 
