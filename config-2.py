@@ -1,5 +1,14 @@
 TABLES = [
-    {
+    
+     {
+        "mysql_table": "tracker_main_data",
+        "pg_table": "raw.tracker_main_data"
+    }
+    
+   
+]
+
+{
         "mysql_table": "tracker_main_data",
         "pg_table": "raw.tracker_main_data"
     },
@@ -19,11 +28,3 @@ TABLES = [
         "mysql_table": "company",
         "pg_table": "raw.company"
     },
-    
-     {
-        "mysql_table": "users",
-        "pg_table": "raw.users"
-    }
-    
-   
-]
