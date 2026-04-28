@@ -1,9 +1,9 @@
-2026-04-17 07:00:04,388 | INFO | Starting full-load + incremental ETL...
-2026-04-17 07:00:04,439 | INFO | client_meters_field_history: Incremental load starting after rowID=7275931
-2026-04-17 07:00:06,202 | INFO | client_meters_field_history: 20000 rows processed, max rowID = 7295931
-2026-04-17 07:00:07,527 | INFO | client_meters_field_history: 40000 rows processed, max rowID = 7315931
-2026-04-17 07:00:08,244 | INFO | client_meters_field_history: 48975 rows processed, max rowID = 7324906
-2026-04-17 07:00:08,363 | INFO | Updated etl_meta for client_meters_field_history: last_row_id = 7324906
-2026-04-17 07:00:08,363 | INFO | Finished full load for client_meters_field_history, total rows = 48975
-2026-04-17 07:00:08,363 | INFO | Full-load ETL COMPLETED SUCCESSFULLY
-2026-04-17 07:00:08,365 | INFO | Connections closed, ETL finished.
+2026-04-28 07:00:04,752 | INFO | Starting full-load + incremental ETL...
+2026-04-28 07:00:04,868 | INFO | client_meters_field_history: Incremental load starting after rowID=7567615
+2026-04-28 07:00:06,750 | INFO | client_meters_field_history: 20000 rows processed, max rowID = 7587615
+2026-04-28 07:00:08,100 | INFO | client_meters_field_history: 40000 rows processed, max rowID = 7607615
+2026-04-28 07:00:08,456 | INFO | client_meters_field_history: 43367 rows processed, max rowID = 7610982
+2026-04-28 07:00:08,574 | INFO | Updated etl_meta for client_meters_field_history: last_row_id = 7610982
+2026-04-28 07:00:08,575 | INFO | Finished full load for client_meters_field_history, total rows = 43367
+2026-04-28 07:00:08,575 | INFO | Full-load ETL COMPLETED SUCCESSFULLY
+2026-04-28 07:00:08,577 | INFO | Connections closed, ETL finished.
