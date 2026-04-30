@@ -1,26 +1,326 @@
-2026-04-28 09:21:05,188 | INFO | Starting ETL...
-2026-04-28 09:21:07,078 | ERROR | ETL FAILED
-Traceback (most recent call last):
-  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 122, in <module>
-    insert_pg(converted, pg_table)
-  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 99, in insert_pg
-    execute_values(pg_cursor, query, values)
-  File "C:\Users\User\Desktop\eazi_etl\venv\Lib\site-packages\psycopg2\extras.py", line 1299, in execute_values
-    cur.execute(b''.join(parts))
-psycopg2.errors.UndefinedColumn: column "ecosave_am_status" of relation "tracker_main_data" does not exist
-LINE 2: ..._manager, lead_gen_agent, closer, ecosave_status, ecosave_am...
-                                                             ^
-
-2026-04-28 09:21:58,814 | INFO | Starting ETL...
-2026-04-28 09:22:00,109 | ERROR | ETL FAILED
-Traceback (most recent call last):
-  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 122, in <module>
-    insert_pg(converted, pg_table)
-  File "C:\Users\User\Desktop\eazi_etl\etl.py", line 99, in insert_pg
-    execute_values(pg_cursor, query, values)
-  File "C:\Users\User\Desktop\eazi_etl\venv\Lib\site-packages\psycopg2\extras.py", line 1299, in execute_values
-    cur.execute(b''.join(parts))
-psycopg2.errors.UndefinedColumn: column "ecosave_am_status" of relation "tracker_main_data" does not exist
-LINE 2: ..._manager, lead_gen_agent, closer, ecosave_status, ecosave_am...
-                                                             ^
-
+2026-04-30 09:30:23,074 | INFO | Starting ETL...
+2026-04-30 09:30:24,836 | INFO | tracker_main_data: 10588 rows processed
+2026-04-30 09:30:24,972 | INFO | Finished tracker_main_data
+2026-04-30 09:30:33,144 | INFO | client_meters: 25000 rows processed
+2026-04-30 09:30:41,482 | INFO | client_meters: 50000 rows processed
+2026-04-30 09:30:49,450 | INFO | client_meters: 75000 rows processed
+2026-04-30 09:30:57,232 | INFO | client_meters: 100000 rows processed
+2026-04-30 09:31:04,734 | INFO | client_meters: 125000 rows processed
+2026-04-30 09:31:12,115 | INFO | client_meters: 150000 rows processed
+2026-04-30 09:31:19,120 | INFO | client_meters: 175000 rows processed
+2026-04-30 09:31:27,533 | INFO | client_meters: 200000 rows processed
+2026-04-30 09:31:37,126 | INFO | client_meters: 225000 rows processed
+2026-04-30 09:31:46,451 | INFO | client_meters: 250000 rows processed
+2026-04-30 09:31:54,536 | INFO | client_meters: 275000 rows processed
+2026-04-30 09:32:02,367 | INFO | client_meters: 300000 rows processed
+2026-04-30 09:32:11,854 | INFO | client_meters: 325000 rows processed
+2026-04-30 09:32:21,901 | INFO | client_meters: 350000 rows processed
+2026-04-30 09:32:30,761 | INFO | client_meters: 375000 rows processed
+2026-04-30 09:32:39,643 | INFO | client_meters: 400000 rows processed
+2026-04-30 09:32:48,906 | INFO | client_meters: 425000 rows processed
+2026-04-30 09:32:58,262 | INFO | client_meters: 450000 rows processed
+2026-04-30 09:33:07,574 | INFO | client_meters: 475000 rows processed
+2026-04-30 09:33:16,645 | INFO | client_meters: 500000 rows processed
+2026-04-30 09:33:25,943 | INFO | client_meters: 525000 rows processed
+2026-04-30 09:33:37,022 | INFO | client_meters: 550000 rows processed
+2026-04-30 09:33:46,281 | INFO | client_meters: 575000 rows processed
+2026-04-30 09:33:55,405 | INFO | client_meters: 600000 rows processed
+2026-04-30 09:34:04,611 | INFO | client_meters: 625000 rows processed
+2026-04-30 09:34:08,667 | INFO | client_meters: 629885 rows processed
+2026-04-30 09:34:10,547 | INFO | Finished client_meters
+2026-04-30 09:34:13,340 | INFO | client_status: 25000 rows processed
+2026-04-30 09:34:15,760 | INFO | client_status: 50000 rows processed
+2026-04-30 09:34:18,372 | INFO | client_status: 75000 rows processed
+2026-04-30 09:34:21,182 | INFO | client_status: 100000 rows processed
+2026-04-30 09:34:24,039 | INFO | client_status: 125000 rows processed
+2026-04-30 09:34:27,022 | INFO | client_status: 150000 rows processed
+2026-04-30 09:34:29,868 | INFO | client_status: 175000 rows processed
+2026-04-30 09:34:33,065 | INFO | client_status: 200000 rows processed
+2026-04-30 09:34:36,313 | INFO | client_status: 225000 rows processed
+2026-04-30 09:34:39,612 | INFO | client_status: 250000 rows processed
+2026-04-30 09:34:43,029 | INFO | client_status: 275000 rows processed
+2026-04-30 09:34:46,323 | INFO | client_status: 300000 rows processed
+2026-04-30 09:34:49,672 | INFO | client_status: 325000 rows processed
+2026-04-30 09:34:52,795 | INFO | client_status: 350000 rows processed
+2026-04-30 09:34:55,954 | INFO | client_status: 375000 rows processed
+2026-04-30 09:34:59,312 | INFO | client_status: 400000 rows processed
+2026-04-30 09:35:02,485 | INFO | client_status: 425000 rows processed
+2026-04-30 09:35:05,687 | INFO | client_status: 450000 rows processed
+2026-04-30 09:35:09,106 | INFO | client_status: 475000 rows processed
+2026-04-30 09:35:12,970 | INFO | client_status: 500000 rows processed
+2026-04-30 09:35:16,262 | INFO | client_status: 525000 rows processed
+2026-04-30 09:35:19,437 | INFO | client_status: 550000 rows processed
+2026-04-30 09:35:23,119 | INFO | client_status: 575000 rows processed
+2026-04-30 09:35:26,763 | INFO | client_status: 600000 rows processed
+2026-04-30 09:35:31,175 | INFO | client_status: 625000 rows processed
+2026-04-30 09:35:34,605 | INFO | client_status: 650000 rows processed
+2026-04-30 09:35:38,116 | INFO | client_status: 675000 rows processed
+2026-04-30 09:35:41,595 | INFO | client_status: 700000 rows processed
+2026-04-30 09:35:45,247 | INFO | client_status: 725000 rows processed
+2026-04-30 09:35:48,903 | INFO | client_status: 750000 rows processed
+2026-04-30 09:35:52,557 | INFO | client_status: 775000 rows processed
+2026-04-30 09:35:56,559 | INFO | client_status: 795329 rows processed
+2026-04-30 09:35:58,523 | INFO | Finished client_status
+2026-04-30 09:36:07,206 | INFO | clients: 25000 rows processed
+2026-04-30 09:36:15,966 | INFO | clients: 50000 rows processed
+2026-04-30 09:36:23,566 | INFO | clients: 75000 rows processed
+2026-04-30 09:36:31,399 | INFO | clients: 100000 rows processed
+2026-04-30 09:36:39,609 | INFO | clients: 125000 rows processed
+2026-04-30 09:36:48,158 | INFO | clients: 150000 rows processed
+2026-04-30 09:36:56,789 | INFO | clients: 175000 rows processed
+2026-04-30 09:37:05,571 | INFO | clients: 200000 rows processed
+2026-04-30 09:37:14,185 | INFO | clients: 225000 rows processed
+2026-04-30 09:37:24,161 | INFO | clients: 250000 rows processed
+2026-04-30 09:37:33,974 | INFO | clients: 275000 rows processed
+2026-04-30 09:37:44,306 | INFO | clients: 300000 rows processed
+2026-04-30 09:37:53,602 | INFO | clients: 325000 rows processed
+2026-04-30 09:38:02,964 | INFO | clients: 350000 rows processed
+2026-04-30 09:38:12,921 | INFO | clients: 375000 rows processed
+2026-04-30 09:38:23,383 | INFO | clients: 400000 rows processed
+2026-04-30 09:38:33,544 | INFO | clients: 425000 rows processed
+2026-04-30 09:38:43,403 | INFO | clients: 450000 rows processed
+2026-04-30 09:38:53,241 | INFO | clients: 475000 rows processed
+2026-04-30 09:39:03,030 | INFO | clients: 500000 rows processed
+2026-04-30 09:39:13,806 | INFO | clients: 525000 rows processed
+2026-04-30 09:39:24,903 | INFO | clients: 550000 rows processed
+2026-04-30 09:39:34,992 | INFO | clients: 575000 rows processed
+2026-04-30 09:39:45,180 | INFO | clients: 600000 rows processed
+2026-04-30 09:39:55,463 | INFO | clients: 625000 rows processed
+2026-04-30 09:40:05,823 | INFO | clients: 650000 rows processed
+2026-04-30 09:40:18,094 | INFO | clients: 675000 rows processed
+2026-04-30 09:40:29,045 | INFO | clients: 700000 rows processed
+2026-04-30 09:40:40,288 | INFO | clients: 725000 rows processed
+2026-04-30 09:40:50,953 | INFO | clients: 750000 rows processed
+2026-04-30 09:42:15,732 | INFO | Starting ETL...
+2026-04-30 09:42:17,362 | INFO | tracker_main_data: 10588 rows processed
+2026-04-30 09:42:17,485 | INFO | Finished tracker_main_data
+2026-04-30 09:42:25,659 | INFO | client_meters: 25000 rows processed
+2026-04-30 09:42:34,004 | INFO | client_meters: 50000 rows processed
+2026-04-30 09:42:43,750 | INFO | client_meters: 75000 rows processed
+2026-04-30 09:42:51,652 | INFO | client_meters: 100000 rows processed
+2026-04-30 09:42:59,269 | INFO | client_meters: 125000 rows processed
+2026-04-30 09:43:06,784 | INFO | client_meters: 150000 rows processed
+2026-04-30 09:43:14,017 | INFO | client_meters: 175000 rows processed
+2026-04-30 09:43:22,314 | INFO | client_meters: 200000 rows processed
+2026-04-30 09:43:31,809 | INFO | client_meters: 225000 rows processed
+2026-04-30 09:43:40,998 | INFO | client_meters: 250000 rows processed
+2026-04-30 09:43:48,938 | INFO | client_meters: 275000 rows processed
+2026-04-30 09:43:57,298 | INFO | client_meters: 300000 rows processed
+2026-04-30 09:44:07,170 | INFO | client_meters: 325000 rows processed
+2026-04-30 09:44:17,468 | INFO | client_meters: 350000 rows processed
+2026-04-30 09:44:26,364 | INFO | client_meters: 375000 rows processed
+2026-04-30 09:44:35,646 | INFO | client_meters: 400000 rows processed
+2026-04-30 09:44:46,019 | INFO | client_meters: 425000 rows processed
+2026-04-30 09:44:55,732 | INFO | client_meters: 450000 rows processed
+2026-04-30 09:45:04,621 | INFO | client_meters: 475000 rows processed
+2026-04-30 09:45:13,516 | INFO | client_meters: 500000 rows processed
+2026-04-30 09:45:22,621 | INFO | client_meters: 525000 rows processed
+2026-04-30 09:45:32,252 | INFO | client_meters: 550000 rows processed
+2026-04-30 09:45:41,632 | INFO | client_meters: 575000 rows processed
+2026-04-30 09:45:50,580 | INFO | client_meters: 600000 rows processed
+2026-04-30 09:45:59,643 | INFO | client_meters: 625000 rows processed
+2026-04-30 09:46:03,807 | INFO | client_meters: 629888 rows processed
+2026-04-30 09:46:05,676 | INFO | Finished client_meters
+2026-04-30 09:46:08,401 | INFO | client_status: 25000 rows processed
+2026-04-30 09:46:10,812 | INFO | client_status: 50000 rows processed
+2026-04-30 09:46:13,459 | INFO | client_status: 75000 rows processed
+2026-04-30 09:46:16,100 | INFO | client_status: 100000 rows processed
+2026-04-30 09:46:18,810 | INFO | client_status: 125000 rows processed
+2026-04-30 09:46:21,644 | INFO | client_status: 150000 rows processed
+2026-04-30 09:46:24,410 | INFO | client_status: 175000 rows processed
+2026-04-30 09:46:27,302 | INFO | client_status: 200000 rows processed
+2026-04-30 09:46:30,237 | INFO | client_status: 225000 rows processed
+2026-04-30 09:46:33,205 | INFO | client_status: 250000 rows processed
+2026-04-30 09:46:36,192 | INFO | client_status: 275000 rows processed
+2026-04-30 09:46:39,301 | INFO | client_status: 300000 rows processed
+2026-04-30 09:46:42,462 | INFO | client_status: 325000 rows processed
+2026-04-30 09:46:45,966 | INFO | client_status: 350000 rows processed
+2026-04-30 09:46:49,077 | INFO | client_status: 375000 rows processed
+2026-04-30 09:46:52,221 | INFO | client_status: 400000 rows processed
+2026-04-30 09:46:55,408 | INFO | client_status: 425000 rows processed
+2026-04-30 09:46:58,580 | INFO | client_status: 450000 rows processed
+2026-04-30 09:47:01,794 | INFO | client_status: 475000 rows processed
+2026-04-30 09:47:05,014 | INFO | client_status: 500000 rows processed
+2026-04-30 09:47:08,269 | INFO | client_status: 525000 rows processed
+2026-04-30 09:47:11,414 | INFO | client_status: 550000 rows processed
+2026-04-30 09:47:14,776 | INFO | client_status: 575000 rows processed
+2026-04-30 09:47:18,168 | INFO | client_status: 600000 rows processed
+2026-04-30 09:47:21,612 | INFO | client_status: 625000 rows processed
+2026-04-30 09:47:25,061 | INFO | client_status: 650000 rows processed
+2026-04-30 09:47:29,173 | INFO | client_status: 675000 rows processed
+2026-04-30 09:47:32,931 | INFO | client_status: 700000 rows processed
+2026-04-30 09:47:36,510 | INFO | client_status: 725000 rows processed
+2026-04-30 09:47:40,024 | INFO | client_status: 750000 rows processed
+2026-04-30 09:47:43,666 | INFO | client_status: 775000 rows processed
+2026-04-30 09:47:46,789 | INFO | client_status: 795329 rows processed
+2026-04-30 09:47:48,033 | INFO | Finished client_status
+2026-04-30 09:47:56,684 | INFO | clients: 25000 rows processed
+2026-04-30 09:48:05,168 | INFO | clients: 50000 rows processed
+2026-04-30 09:48:12,817 | INFO | clients: 75000 rows processed
+2026-04-30 09:48:20,500 | INFO | clients: 100000 rows processed
+2026-04-30 09:48:28,414 | INFO | clients: 125000 rows processed
+2026-04-30 09:48:36,658 | INFO | clients: 150000 rows processed
+2026-04-30 09:48:44,835 | INFO | clients: 175000 rows processed
+2026-04-30 09:48:53,533 | INFO | clients: 200000 rows processed
+2026-04-30 09:49:01,941 | INFO | clients: 225000 rows processed
+2026-04-30 09:49:11,318 | INFO | clients: 250000 rows processed
+2026-04-30 09:49:21,495 | INFO | clients: 275000 rows processed
+2026-04-30 09:49:30,953 | INFO | clients: 300000 rows processed
+2026-04-30 09:49:40,190 | INFO | clients: 325000 rows processed
+2026-04-30 09:49:49,318 | INFO | clients: 350000 rows processed
+2026-04-30 09:49:58,859 | INFO | clients: 375000 rows processed
+2026-04-30 09:50:09,001 | INFO | clients: 400000 rows processed
+2026-04-30 09:50:18,713 | INFO | clients: 425000 rows processed
+2026-04-30 09:50:28,639 | INFO | clients: 450000 rows processed
+2026-04-30 09:50:38,309 | INFO | clients: 475000 rows processed
+2026-04-30 09:50:48,639 | INFO | clients: 500000 rows processed
+2026-04-30 09:50:58,921 | INFO | clients: 525000 rows processed
+2026-04-30 09:51:09,296 | INFO | clients: 550000 rows processed
+2026-04-30 09:51:20,015 | INFO | clients: 575000 rows processed
+2026-04-30 09:51:30,069 | INFO | clients: 600000 rows processed
+2026-04-30 09:51:40,007 | INFO | clients: 625000 rows processed
+2026-04-30 09:51:50,137 | INFO | clients: 650000 rows processed
+2026-04-30 09:52:00,917 | INFO | clients: 675000 rows processed
+2026-04-30 09:52:13,103 | INFO | clients: 700000 rows processed
+2026-04-30 09:52:24,622 | INFO | clients: 725000 rows processed
+2026-04-30 09:52:37,173 | INFO | clients: 750000 rows processed
+2026-04-30 09:52:50,634 | INFO | clients: 775000 rows processed
+2026-04-30 09:53:01,997 | INFO | clients: 800000 rows processed
+2026-04-30 09:53:12,848 | INFO | clients: 823304 rows processed
+2026-04-30 09:53:15,274 | INFO | Finished clients
+2026-04-30 09:53:15,760 | INFO | company: 265 rows processed
+2026-04-30 09:53:15,876 | INFO | Finished company
+2026-04-30 09:53:16,234 | INFO | users: 1132 rows processed
+2026-04-30 09:53:16,352 | INFO | Finished users
+2026-04-30 09:53:16,353 | INFO | ETL COMPLETED SUCCESSFULLY
+2026-04-30 10:58:11,637 | INFO | Starting ETL...
+2026-04-30 10:58:13,345 | INFO | tracker_main_data: 10642 rows processed
+2026-04-30 10:58:13,467 | INFO | Finished tracker_main_data
+2026-04-30 10:58:21,474 | INFO | client_meters: 25000 rows processed
+2026-04-30 10:58:29,907 | INFO | client_meters: 50000 rows processed
+2026-04-30 10:58:38,059 | INFO | client_meters: 75000 rows processed
+2026-04-30 10:58:45,860 | INFO | client_meters: 100000 rows processed
+2026-04-30 10:58:53,506 | INFO | client_meters: 125000 rows processed
+2026-04-30 10:59:00,910 | INFO | client_meters: 150000 rows processed
+2026-04-30 10:59:08,047 | INFO | client_meters: 175000 rows processed
+2026-04-30 10:59:16,479 | INFO | client_meters: 200000 rows processed
+2026-04-30 10:59:26,025 | INFO | client_meters: 225000 rows processed
+2026-04-30 10:59:35,063 | INFO | client_meters: 250000 rows processed
+2026-04-30 10:59:42,957 | INFO | client_meters: 275000 rows processed
+2026-04-30 10:59:50,885 | INFO | client_meters: 300000 rows processed
+2026-04-30 11:00:00,397 | INFO | client_meters: 325000 rows processed
+2026-04-30 11:00:10,458 | INFO | client_meters: 350000 rows processed
+2026-04-30 11:00:21,302 | INFO | client_meters: 375000 rows processed
+2026-04-30 11:00:30,365 | INFO | client_meters: 400000 rows processed
+2026-04-30 11:00:39,796 | INFO | client_meters: 425000 rows processed
+2026-04-30 11:00:49,161 | INFO | client_meters: 450000 rows processed
+2026-04-30 11:00:58,619 | INFO | client_meters: 475000 rows processed
+2026-04-30 11:01:07,675 | INFO | client_meters: 500000 rows processed
+2026-04-30 11:01:17,402 | INFO | client_meters: 525000 rows processed
+2026-04-30 11:01:27,236 | INFO | client_meters: 550000 rows processed
+2026-04-30 11:01:36,658 | INFO | client_meters: 575000 rows processed
+2026-04-30 11:01:45,713 | INFO | client_meters: 600000 rows processed
+2026-04-30 11:01:54,745 | INFO | client_meters: 625000 rows processed
+2026-04-30 11:01:58,576 | INFO | client_meters: 629912 rows processed
+2026-04-30 11:02:00,471 | INFO | Finished client_meters
+2026-04-30 11:02:03,236 | INFO | client_status: 25000 rows processed
+2026-04-30 11:02:05,540 | INFO | client_status: 50000 rows processed
+2026-04-30 11:02:08,187 | INFO | client_status: 75000 rows processed
+2026-04-30 11:02:10,838 | INFO | client_status: 100000 rows processed
+2026-04-30 11:02:13,554 | INFO | client_status: 125000 rows processed
+2026-04-30 11:02:16,361 | INFO | client_status: 150000 rows processed
+2026-04-30 11:02:19,228 | INFO | client_status: 175000 rows processed
+2026-04-30 11:02:22,081 | INFO | client_status: 200000 rows processed
+2026-04-30 11:02:24,984 | INFO | client_status: 225000 rows processed
+2026-04-30 11:02:27,918 | INFO | client_status: 250000 rows processed
+2026-04-30 11:02:30,948 | INFO | client_status: 275000 rows processed
+2026-04-30 11:02:34,012 | INFO | client_status: 300000 rows processed
+2026-04-30 11:02:37,064 | INFO | client_status: 325000 rows processed
+2026-04-30 11:02:40,129 | INFO | client_status: 350000 rows processed
+2026-04-30 11:02:43,222 | INFO | client_status: 375000 rows processed
+2026-04-30 11:02:46,429 | INFO | client_status: 400000 rows processed
+2026-04-30 11:02:49,581 | INFO | client_status: 425000 rows processed
+2026-04-30 11:02:52,807 | INFO | client_status: 450000 rows processed
+2026-04-30 11:02:56,024 | INFO | client_status: 475000 rows processed
+2026-04-30 11:02:59,255 | INFO | client_status: 500000 rows processed
+2026-04-30 11:03:02,506 | INFO | client_status: 525000 rows processed
+2026-04-30 11:03:05,670 | INFO | client_status: 550000 rows processed
+2026-04-30 11:03:09,003 | INFO | client_status: 575000 rows processed
+2026-04-30 11:03:12,751 | INFO | client_status: 600000 rows processed
+2026-04-30 11:03:16,136 | INFO | client_status: 625000 rows processed
+2026-04-30 11:03:19,563 | INFO | client_status: 650000 rows processed
+2026-04-30 11:03:23,011 | INFO | client_status: 675000 rows processed
+2026-04-30 11:03:26,486 | INFO | client_status: 700000 rows processed
+2026-04-30 11:03:29,995 | INFO | client_status: 725000 rows processed
+2026-04-30 11:03:33,560 | INFO | client_status: 750000 rows processed
+2026-04-30 11:03:37,089 | INFO | client_status: 775000 rows processed
+2026-04-30 11:03:40,196 | INFO | client_status: 795329 rows processed
+2026-04-30 11:03:41,270 | INFO | Finished client_status
+2026-04-30 11:03:49,961 | INFO | clients: 25000 rows processed
+2026-04-30 11:03:58,490 | INFO | clients: 50000 rows processed
+2026-04-30 11:04:06,096 | INFO | clients: 75000 rows processed
+2026-04-30 11:04:13,632 | INFO | clients: 100000 rows processed
+2026-04-30 11:04:21,363 | INFO | clients: 125000 rows processed
+2026-04-30 11:04:29,838 | INFO | clients: 150000 rows processed
+2026-04-30 11:04:37,937 | INFO | clients: 175000 rows processed
+2026-04-30 11:04:46,408 | INFO | clients: 200000 rows processed
+2026-04-30 11:04:54,720 | INFO | clients: 225000 rows processed
+2026-04-30 11:05:03,867 | INFO | clients: 250000 rows processed
+2026-04-30 11:05:14,040 | INFO | clients: 275000 rows processed
+2026-04-30 11:05:25,726 | INFO | clients: 300000 rows processed
+2026-04-30 11:05:34,731 | INFO | clients: 325000 rows processed
+2026-04-30 11:05:44,000 | INFO | clients: 350000 rows processed
+2026-04-30 11:05:53,226 | INFO | clients: 375000 rows processed
+2026-04-30 11:06:02,657 | INFO | clients: 400000 rows processed
+2026-04-30 11:06:11,953 | INFO | clients: 425000 rows processed
+2026-04-30 11:06:21,378 | INFO | clients: 450000 rows processed
+2026-04-30 11:06:30,925 | INFO | clients: 475000 rows processed
+2026-04-30 11:06:44,301 | INFO | clients: 500000 rows processed
+2026-04-30 11:06:53,951 | INFO | clients: 525000 rows processed
+2026-04-30 11:07:03,939 | INFO | clients: 550000 rows processed
+2026-04-30 11:07:14,035 | INFO | clients: 575000 rows processed
+2026-04-30 11:07:24,110 | INFO | clients: 600000 rows processed
+2026-04-30 11:07:34,192 | INFO | clients: 625000 rows processed
+2026-04-30 11:07:45,087 | INFO | clients: 650000 rows processed
+2026-04-30 11:07:56,290 | INFO | clients: 675000 rows processed
+2026-04-30 11:08:06,757 | INFO | clients: 700000 rows processed
+2026-04-30 11:08:17,083 | INFO | clients: 725000 rows processed
+2026-04-30 11:08:27,770 | INFO | clients: 750000 rows processed
+2026-04-30 11:08:38,553 | INFO | clients: 775000 rows processed
+2026-04-30 11:08:49,370 | INFO | clients: 800000 rows processed
+2026-04-30 11:08:59,613 | INFO | clients: 823304 rows processed
+2026-04-30 11:09:02,464 | INFO | Finished clients
+2026-04-30 11:09:02,969 | INFO | company: 265 rows processed
+2026-04-30 11:09:03,085 | INFO | Finished company
+2026-04-30 11:09:03,418 | INFO | users: 1132 rows processed
+2026-04-30 11:09:03,533 | INFO | Finished users
+2026-04-30 11:09:03,535 | INFO | ETL COMPLETED SUCCESSFULLY
+2026-04-30 11:25:17,849 | INFO | Starting ETL...
+2026-04-30 11:25:26,008 | INFO | client_meters: 25000 rows processed
+2026-04-30 11:25:34,468 | INFO | client_meters: 50000 rows processed
+2026-04-30 11:25:42,325 | INFO | client_meters: 75000 rows processed
+2026-04-30 11:25:50,043 | INFO | client_meters: 100000 rows processed
+2026-04-30 11:25:57,619 | INFO | client_meters: 125000 rows processed
+2026-04-30 11:26:05,069 | INFO | client_meters: 150000 rows processed
+2026-04-30 11:26:11,986 | INFO | client_meters: 175000 rows processed
+2026-04-30 11:26:20,421 | INFO | client_meters: 200000 rows processed
+2026-04-30 11:26:29,901 | INFO | client_meters: 225000 rows processed
+2026-04-30 11:26:39,214 | INFO | client_meters: 250000 rows processed
+2026-04-30 11:26:47,101 | INFO | client_meters: 275000 rows processed
+2026-04-30 11:26:54,899 | INFO | client_meters: 300000 rows processed
+2026-04-30 11:27:04,217 | INFO | client_meters: 325000 rows processed
+2026-04-30 11:27:15,230 | INFO | client_meters: 350000 rows processed
+2026-04-30 11:27:24,543 | INFO | client_meters: 375000 rows processed
+2026-04-30 11:27:33,450 | INFO | client_meters: 400000 rows processed
+2026-04-30 11:27:42,863 | INFO | client_meters: 425000 rows processed
+2026-04-30 11:27:52,329 | INFO | client_meters: 450000 rows processed
+2026-04-30 11:28:01,559 | INFO | client_meters: 475000 rows processed
+2026-04-30 11:28:10,500 | INFO | client_meters: 500000 rows processed
+2026-04-30 11:28:19,671 | INFO | client_meters: 525000 rows processed
+2026-04-30 11:28:29,324 | INFO | client_meters: 550000 rows processed
+2026-04-30 11:28:38,610 | INFO | client_meters: 575000 rows processed
+2026-04-30 11:28:47,615 | INFO | client_meters: 600000 rows processed
+2026-04-30 11:28:56,681 | INFO | client_meters: 625000 rows processed
+2026-04-30 11:29:00,964 | INFO | client_meters: 629922 rows processed
+2026-04-30 11:29:03,876 | INFO | Finished client_meters
+2026-04-30 11:29:03,877 | INFO | ETL COMPLETED SUCCESSFULLY

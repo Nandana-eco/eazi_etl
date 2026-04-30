@@ -1,8 +1,8 @@
 import mysql.connector
 import psycopg2
 from psycopg2.extras import execute_values
-from conversion_maps import CONVERSION_MAPS
-from config import TABLES
+from conversion_maps_cm import CONVERSION_MAPS
+from config_cm import TABLES
 import datetime
 from logger_config import setup_logger
 import os
